@@ -39,4 +39,14 @@ def concluir_tarefa():
         messagebox.showwarning("Aviso", "Selecione uma tarefa!")
 
 
+def remover_tarefa():
+    try:
+        indice = lista_tarefas.curselection()[0]
+        del tarefas[indice]
+        salvar_tarefas()
+        atualizar_lista()
+    except IndexError:
+        messagebox.showwarning("Aviso", "Selecione uma tarefa!")
+
+
 
