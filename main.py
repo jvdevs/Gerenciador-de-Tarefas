@@ -65,4 +65,13 @@ entrada_tarefa = tk.Entry(janela, width=40)
 entrada_tarefa.pack(pady=10)
 
 
+botao_adicionar = tk.Button(janela, text="Adicionar", command=adicionar_tarefa)
+botao_adicionar.pack()
+
+botao_concluir = tk.Button(janela, text="Concluir", command=concluir_tarefa)
+botao_concluir.pack()
+
+botao_remover = tk.Button(janela, text="Remover", command=remover_tarefa)
+botao_remover.pack()
+
 
