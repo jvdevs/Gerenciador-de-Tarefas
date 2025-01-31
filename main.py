@@ -81,3 +81,5 @@ lista_tarefas.pack(pady=10)
 
 tarefas = carregar_tarefas()
 atualizar_lista()
+
+janela.mainloop()
