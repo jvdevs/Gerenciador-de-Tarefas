@@ -16,3 +16,16 @@ def carregar_tarefas():
 def salvar_tarefas():
     with open(ARQUIVO_TAREFAS, "w") as f:
         json.dump(tarefas, f, indent=4)
+
+
+def adicionar_tarefa():
+    tarefa = entrada_tarefa.get()
+    if tarefa:
+        tarefas.append({"tarefa": tarefa, "concluida": False})
+        salvar_tarefas()
+        atualizar_lista()
+        entrada_tarefa.delete(0, tk.END)
+    else:
+        messagebox.showwarning("Aviso", "Digite uma tarefa!")
+
+
