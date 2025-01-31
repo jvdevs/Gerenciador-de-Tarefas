@@ -61,3 +61,8 @@ janela.title("Gerenciador de Tarefas")
 janela.geometry("400x400")
 
 
+entrada_tarefa = tk.Entry(janela, width=40)
+entrada_tarefa.pack(pady=10)
+
+
+
