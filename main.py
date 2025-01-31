@@ -75,3 +75,6 @@ botao_remover = tk.Button(janela, text="Remover", command=remover_tarefa)
 botao_remover.pack()
 
 
+lista_tarefas = tk.Listbox(janela, width=50, height=15)
+lista_tarefas.pack(pady=10)
+
