@@ -49,4 +49,10 @@ def remover_tarefa():
         messagebox.showwarning("Aviso", "Selecione uma tarefa!")
 
 
+def atualizar_lista():
+    lista_tarefas.delete(0, tk.END)
+    for t in tarefas:
+        status = "✅" if t["concluida"] else "❌"
+        lista_tarefas.insert(tk.END, f"{status} {t['tarefa']}")
+
 
