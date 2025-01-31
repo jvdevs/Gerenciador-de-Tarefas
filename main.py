@@ -78,3 +78,6 @@ botao_remover.pack()
 lista_tarefas = tk.Listbox(janela, width=50, height=15)
 lista_tarefas.pack(pady=10)
 
+
+tarefas = carregar_tarefas()
+atualizar_lista()
