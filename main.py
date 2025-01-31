@@ -56,3 +56,8 @@ def atualizar_lista():
         lista_tarefas.insert(tk.END, f"{status} {t['tarefa']}")
 
 
+janela = tk.Tk()
+janela.title("Gerenciador de Tarefas")
+janela.geometry("400x400")
+
+
